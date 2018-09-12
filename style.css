@@ -1,0 +1,39 @@
+/* style sheet for personal repository
+*/
+
+html {
+    background-color: black;
+}
+
+h1 {
+    font-size: 30px;
+    color: ghostwhite;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: 120px;
+}
+
+h2{
+    font-size: 24px;
+    color: ghostwhite;
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: 30px;
+}
+
+body{
+    margin-top: 30px;
+    font-size: 18px;
+    color: ghostwhite;
+    text-align: center;
+}
+
+img{
+    /*Taken from Professor Lawley's page to set portrait to one side of page
+        Changed float right to left
+        also changed to add right side margin */
+    float: left;
+    padding: 0px;
+    border: 10px solid black;
+    margin-right: -120px;
+}

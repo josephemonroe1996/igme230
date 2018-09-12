@@ -1,2 +1,2 @@
-# igme230
-repository for igme230 coursework
+# josephemonroe1996.github.io
+Public repository for Professor Lawley's IGME230 class
