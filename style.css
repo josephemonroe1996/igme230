@@ -1,5 +1,11 @@
 /* style sheet for personal repository
 */
+/*sets box size and font
+*/
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
 
 html {
     /*changes background to black */
