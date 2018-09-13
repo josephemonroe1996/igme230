@@ -2,10 +2,12 @@
 */
 
 html {
+    /*changes background to black */
     background-color: black;
 }
 
 h1 {
+    /* sets font size, color, aligns text to center, sets a bottom margin and a left margin */
     font-size: 30px;
     color: ghostwhite;
     text-align: center;
@@ -14,6 +16,7 @@ h1 {
 }
 
 h2{
+    /* sets font size, color, aligns text to center, sets a bottom margin and adds top padding */
     font-size: 24px;
     color: ghostwhite;
     text-align: center;
@@ -22,6 +25,7 @@ h2{
 }
 
 body{
+    /* sets font size, color, aligns text to center, and sets a top margin */
     margin-top: 30px;
     font-size: 18px;
     color: ghostwhite;
