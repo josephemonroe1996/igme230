@@ -49,6 +49,7 @@
     // retrieve the stored data; will return `null` if the user has never been to this page
     const storedName = localStorage.getItem(nameKey);
     const storedColor = localStorage.getItem(colorKey);
+    const body = document.querySelector("body");
 
     // if we find a previously set name value, display it
     if (storedName) {
@@ -62,13 +63,13 @@
         colorSelect.querySelector(`option[value='${storedColor}']`).selected = true;
     }
 
-    document.querySelector("body").style.backgroundColor = storedColor;
+    body.style.backgroundColor = storedColor;
 
     /* This part of the script is triggered by user actions  */
     // when the user changes their name or color, update localStorage
     nameField.onchange = e => { localStorage.setItem(nameKey, e.target.value); };
     colorSelect.onchange = e => { localStorage.setItem(colorKey, e.target.value); };
-
+    body.onchange = e => { localStorage.setItem(body, e.target.value);};
 
 </script>
 </body>
