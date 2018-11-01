@@ -33,9 +33,14 @@
         icon: "baseline-directions_walk-24px.svg",
         map: myMap
     });
+    //creates info window and information inside window
     var contentString = <div id="content"><h2 id="firstHeading" class="firstHeading">I Did It!</h2><p>This is my very own custom info window.</p></div>;
     var myInfowindow = new google.maps.InfoWindow({
     content: contentString
+    });
+    //adds popup for info window on click
+    myMarker.addListener('click', function() {
+    myInfowindow.open(myMap, myMarker);
     });
 
       });
