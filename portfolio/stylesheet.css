@@ -66,9 +66,16 @@ h2 {
     margin-top: 20px;
 }
 
+.container {
+    background-color: rgb(18, 79, 121);
+    margin-top: 20px;
+    width: 100%
+}
+
 header, article, aside {
     width: 100%;
 }
+
 
 header {
     background-color: rgb(18, 79, 121);
@@ -121,6 +128,12 @@ aside {
     
     article {
         float:left;
+        width: 60%;
+        padding: 0 20px;
+    }
+
+    .container {
+        float: left;
         width: 60%;
         padding: 0 20px;
     }
