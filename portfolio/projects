@@ -20,8 +20,8 @@
         <div class="dropdown">
                 <button onclick="buttonClick()" class="dropbtn">Click me!</button>
                 <div id="myDropdown" class="dropdown-content">
-                  <a href="#">Projects</a>
-                  <a href="#">Resume</a>
+                  <a href="index">Home</a>
+                  <a href="resume">Resume</a>
                 </div>
               </div> 
       </nav>
@@ -34,10 +34,10 @@
   
       <aside>
         <h2>Contact info</h2>
-        <p> Name: Joseph Monroe <br>
-            Occupation: Student <br>
-            Email: josephemonroe1996@gmail.com <br>
-            <br>
+        <p> <b>Name:</b> Joseph Monroe <br>
+          <b>Occupation:</b> Student <br>
+          <b>Email:</b> josephemonroe1996@gmail.com <br>
+          <br>
             Email me for more information or if you would like to set something up!
         </p>
       </aside>

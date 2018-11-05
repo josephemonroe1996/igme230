@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+/* w3 schools drop down button tutorial */
+ /* Dropdown Button */
+ .dropbtn {
+    background-color: rgb(0, 26, 45);
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: rgb(0, 36, 61);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(0, 26, 45);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (uses JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;} 
+
+/* end button code from W3 schools drop down tutorial */
+
+body {
+    margin: 20px;
+    background-color: rgb(0, 49, 83);
+    color:   rgb(141, 197, 236);
+}
+
+h2 {
+    background-color: rgb(18, 79, 121);
+}
+
+.container {
+    background-color: rgb(18, 79, 121);
+    padding: 0px;
+    margin-top: 20px;
+}
+
+header, .container, aside {
+    width: 100%;
+}
+
+header {
+    background-color: rgb(18, 79, 121);
+    padding: 8px;
+}
+
+h1, h2, nav {
+    text-align: center;
+}
+
+nav {
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgb(18, 79, 121);
+}
+
+img {
+    max-width: 100%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+h3, nav a {
+    background-color: rgb(18, 79, 121);
+    padding: 8px;
+    margin-top: 2px;
+    width: 100%;
+    display: block;
+}
+
+aside {
+    background-color: rgb(18, 79, 121);
+    padding: 20px;
+    margin-top: 20px;
+    text-align: left;
+    overflow: auto;
+}
+
+@media screen and (min-width: 620px) {
+    aside, nav {
+        float: left;
+        width: 20%;
+    }
+    
+    .container {
+        float:left;
+        width: 60%;
+        padding: 0 20px;
+    }
+}
+
