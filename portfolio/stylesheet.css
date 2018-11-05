@@ -51,8 +51,19 @@
 /* end button code from W3 schools drop down tutorial */
 
 body {
+    margin: 20px;
     background-color: rgb(0, 49, 83);
-    color: rgb(204, 204, 204)
+    color:   rgb(141, 197, 236);
+}
+
+h2 {
+    background-color: rgb(18, 79, 121);
+}
+
+.about {
+    background-color: rgb(18, 79, 121);
+    padding: 8px;
+    margin-top: 20px;
 }
 
 header, article, aside {
@@ -70,7 +81,7 @@ h1, h2, nav {
 
 nav {
     font-size: 18px;
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 20px;
     background-color: rgb(18, 79, 121);
 }
@@ -79,18 +90,25 @@ img {
     max-width: 100%;
 }
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
 h3, nav a {
     background-color: rgb(18, 79, 121);
     padding: 8px;
-    margin-top: 7px;
+    margin-top: 2px;
     width: 100%;
     display: block;
 }
 
 aside {
     background-color: rgb(18, 79, 121);
-    padding: 15px;
-    margin-top: 10px;
+    padding: 20px;
+    margin-top: 20px;
     text-align: left;
     overflow: auto;
 }

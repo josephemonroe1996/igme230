@@ -20,17 +20,16 @@
         <div class="dropdown">
                 <button onclick="buttonClick()" class="dropbtn">Click me!</button>
                 <div id="myDropdown" class="dropdown-content">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
+                  <a href="#">Projects</a>
+                  <a href="#">Resume</a>
                 </div>
               </div> 
       </nav>
   
       <article>
         <h2>About me!</h2>
-        <img src="joe.png" alt="Photo of me!">
-        <p>I'm a New Media Interactive Development student at Rochester Institute of Technology. In case you couldn't tell from the title, my name is Joseph Monroe! I'm currently studying many things in school like coding, graphic design, writing, mathematics and game design.</p>
+        <img src="joe.png" alt="Photo of me!" class="center">
+        <div class="about">I'm a New Media Interactive Development student at Rochester Institute of Technology. In case you couldn't tell from the title, my name is Joseph Monroe! I'm currently studying many things in school like coding, graphic design, writing, mathematics and game design.</div>
       </article>
   
       <aside>
@@ -38,6 +37,7 @@
         <p> Name: Joseph Monroe <br>
             Occupation: Student <br>
             Email: josephemonroe1996@gmail.com <br>
+            <br>
             Email me for more information or if you would like to set something up!
         </p>
       </aside>
