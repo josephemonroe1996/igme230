@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Joseph Monroe's Portfolio</title>
+</head>
+<body>
+
+    <header>
+      <h1>Responsive Example</h1>
+    </header>
+  
+    <main>
+      <nav>
+        <h3>Nav Menu</h3>
+      </nav>
+  
+      <article>
+        <h2>Article Content</h2>
+        <p>This is where the more important content goes.</p>
+      </article>
+  
+      <aside>
+        <h2>Aside</h2>
+        <p>This is lower priority content.</p>
+      </aside>
+    </main>
+  
+  </body>
+  
+  </html>
