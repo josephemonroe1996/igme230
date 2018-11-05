@@ -2,10 +2,14 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "Sofia";
+    src: url("Sofia-Regular.otf");
+
 /* w3 schools drop down button tutorial */
  /* Dropdown Button */
  .dropbtn {
-    background-color: rgb(0, 26, 45);
+    background-color: #262626;
     color: white;
     padding: 10px;
     font-size: 16px;
@@ -15,7 +19,7 @@
 
 /* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus {
-    background-color: rgb(0, 36, 61);
+    background-color: #1d1d1d;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -28,7 +32,7 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgb(0, 26, 45);
+    background-color: #262626;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -52,16 +56,17 @@
 
 body {
     margin: 20px;
-    background-color: rgb(0, 49, 83);
-    color:   rgb(141, 197, 236);
+    background-color: #33363b;
+    color:   #f5f5f5;
+    font-family: 'Sofia-Regular'
 }
 
 h2 {
-    background-color: rgb(18, 79, 121);
+    background-color: #3f3f3f;
 }
 
 .about {
-    background-color: rgb(18, 79, 121);
+    background-color: #3f3f3f;
     padding: 8px;
     margin-top: 20px;
 }
@@ -77,7 +82,7 @@ header, article, aside {
 }
 
 header {
-    background-color: rgb(18, 79, 121);
+    background-color: #3f3f3f;
     padding: 8px;
 }
 
@@ -89,7 +94,7 @@ nav {
     font-size: 18px;
     margin-top: 20px;
     padding: 20px;
-    background-color: rgb(18, 79, 121);
+    background-color: #3f3f3f;
 }
 
 img {
@@ -104,7 +109,7 @@ img {
 }
 
 h3, nav a {
-    background-color: rgb(18, 79, 121);
+    background-color: #3f3f3f;
     padding: 8px;
     margin-top: 2px;
     width: 100%;
@@ -112,7 +117,7 @@ h3, nav a {
 }
 
 aside {
-    background-color: rgb(18, 79, 121);
+    background-color: #3f3f3f;
     padding: 5px;
     margin-top: 20px;
     text-align: left;
