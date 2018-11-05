@@ -26,12 +26,10 @@
               </div> 
       </nav>
   
-      <article>
         <div class="container"><object data="jemResume.pdf" type="application/pdf" width="100%" height="500px">
           <embed src="jemResume.pdf" type="application/pdf" width="100%" height="500px"/>
       </object></div>
-          
-      </article>
+
   
       <aside>
         <h2>Contact info</h2>

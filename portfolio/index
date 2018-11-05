@@ -29,7 +29,7 @@
       <article>
         <h2>About me!</h2>
         <img src="joe.png" alt="Photo of me!" class="center">
-        <div class="about">I'm a New Media Interactive Development student at Rochester Institute of Technology. In case you couldn't tell from the title, my name is Joseph Monroe! I'm currently studying many things in school like coding, graphic design, writing, mathematics and game design. My dream job at the moment would have to be working as QA for a big name company like Rockstar Games, Blizzard, Wizards of the Coast, or CD Projekt Red. Hopefully one day I can work on great things like many before me!</div>
+        <div class="about">I'm a New Media Interactive Development student at Rochester Institute of Technology. In case you couldn't tell from the title, my name is Joseph Monroe! I'm currently studying many things in school like coding, graphic design, writing, mathematics and game design. My dream job at the moment would have to be working as QA (Quality Assurance, testing games or new features!) for a big name company like Rockstar Games, Blizzard, Wizards of the Coast, or CD Projekt Red. Hopefully one day I can work on great things like many before me!</div>
       </article>
   
       <aside>

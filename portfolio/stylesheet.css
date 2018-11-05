@@ -67,15 +67,14 @@ h2 {
 }
 
 .container {
-    background-color: rgb(18, 79, 121);
     margin-top: 20px;
-    width: 100%
+    margin-bottom: 20px;
 }
+
 
 header, article, aside {
     width: 100%;
 }
-
 
 header {
     background-color: rgb(18, 79, 121);
@@ -114,10 +113,9 @@ h3, nav a {
 
 aside {
     background-color: rgb(18, 79, 121);
-    padding: 20px;
+    padding: 5px;
     margin-top: 20px;
     text-align: left;
-    overflow: auto;
 }
 
 @media screen and (min-width: 620px) {
