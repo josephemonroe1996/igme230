@@ -10,19 +10,20 @@
             margin: 0; padding: 0;
         }
 
+        /* sets container for grid, allows centering of grid */
         #container {
             display: flex;
             justify-content: center;
             align-items: center;
             background-color: green;
-            width: 100vw;
-            height: 100vh;
+            width: 100vw; /* uses 100 vertical width units, allowing for use of full screen */
+            height: 100vh; /* uses 100 vertical height units, allowing for use of full screen */
         }
 
         /* sets up grid */
         #myGrid {
             display: grid;
-            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr; /* divides screen into 3rds fr = fraction, useful for not using % */
             grid-template-columns: 1fr 1fr 1fr;
             width: 90%;
             max-width: 1000px;
