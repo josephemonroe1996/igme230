@@ -8,8 +8,53 @@
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
     <title>jQuery in class</title>
+    <style>
+        body {
+            background-color: purple;
+        }
+        #navpanel {
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+
+        }
+
+        #show {
+            color: red;
+            background-color: black;
+            
+        }
+        #hide {
+            color: black;
+            background-color: red;
+            
+        }
+        
+    </style>
 </head>
 <body>
+
+    <button id="show">Show</button>
+    <button id="hide">Hide</button>
+    <div id="navpanel">
+        <ul>
+            <li>Link 1</li>
+            <li>Link 2</li>
+            <li>Link 3</li>
+            <li>Link 4</li>
+        </ul>
+    </div>
+
+    <script>
+        //uses jquery to show and hide the navpanel, jquery applied via Google's CDN
+        $("#show").click(function(){
+            $("#navpanel").show();
+        });
+        $("#hide").click(function(){
+            $("#navpanel").hide();
+        });
+    
+    </script>
     
 </body>
 </html>
