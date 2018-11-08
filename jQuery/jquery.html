@@ -10,9 +10,13 @@
     <title>jQuery in class</title>
     <style>
         body {
-            background-color: purple;
+            background-color: black;
         }
         #navpanel {
+            margin-top: 10px;
+            display: flex;
+            align-content: center;
+            align-items: center;
             background-color: aqua;
             width: 200px;
             height: 200px;
@@ -36,6 +40,8 @@
 
     <button id="show">Show</button>
     <button id="hide">Hide</button>
+    <button id="fadeIn">Fade In</button>
+    <button id="fadeOut">Fade Out</button>
     <div id="navpanel">
         <ul>
             <li>Link 1</li>
@@ -52,6 +58,17 @@
         });
         $("#hide").click(function(){
             $("#navpanel").hide();
+        }); 
+        //uses jquery to fade in and out nav panel
+        $("#fadeOut").click(function(){
+            $("#navpanel").fadeOut();
+            $("#navpanel").fadeOut("slow");
+            $("#navpanel").fadeOut(3000);
+        });
+        $("#fadeIn").click(function(){
+            $("#navpanel").fadeIn();
+            $("#navpanel").fadeIn("slow");
+            $("#navpanel").fadeIn(3000);
         });
     
     </script>
