@@ -38,3 +38,26 @@ nav, aside {
 Your Formatting
 ***************/
 
+/*grid set up */
+#wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    width: 100vw; /* uses 100 vertical width units, allowing for use of full screen */
+    height: 100vh; /* uses 100 vertical height units, allowing for use of full screen */
+}
+
+
+/* mobile set up */
+@media screen and (min-width: 620px) {
+    aside, nav {
+        float: left;
+        min-width: 100%;
+    }
+    
+    article {
+        float:left;
+        min-width: 60%;
+    }
+}
