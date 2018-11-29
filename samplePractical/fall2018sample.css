@@ -47,20 +47,7 @@ Your Formatting
     width: 90%;
     max-width: 1200px;
     min-height: 100%; 
-    grid-template-rows: 4rem min-content 3rem;
+    grid-template-rows: 4rem auto 3rem;
     grid-template-columns: 1fr 2fr 200px;
 }
 
-
-/* mobile set up */
-@media screen and (min-width: 620px) {
-    aside, nav {
-        float: left;
-        min-width: 100%;
-    }
-    
-    article {
-        float:left;
-        min-width: 60%;
-    }
-}
