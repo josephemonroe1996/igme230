@@ -47,7 +47,7 @@ Your Formatting
     width: 90%;
     max-width: 1200px;
     min-height: 100%; 
-    grid-template-rows: 4rem 100% 3rem;
+    grid-template-rows: 4rem min-content 3rem;
     grid-template-columns: 1fr 2fr 200px;
 }
 
