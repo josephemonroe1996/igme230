@@ -52,6 +52,7 @@ Your Formatting
     grid-template-columns: 1fr 2fr 200px;
 }
 
+/*defines area for grid */
 #wrapper > header {
     grid-area: head;
 }
