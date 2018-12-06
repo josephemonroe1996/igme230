@@ -40,14 +40,72 @@ Your Formatting
 
 /*grid set up */
 #wrapper {
+    display: grid;
+    width: 90vw;
+    max-width: 1200px;
+    min-height: 100vh;
+    grid-template-areas: 
+    "head head head"
+    "aside art nav"
+    "foot foot foot"; 
+    grid-template-rows: 4rem auto 3rem;
+    grid-template-columns: 1fr 2fr 200px;
+}
+
+#wrapper > header {
+    grid-area: head;
+}
+#wrapper > nav {
+    grid-area: nav;
+}
+
+#wrapper > aside {
+    grid-area: aside;
+}
+
+#wrapper > article {
+    grid-area: art;
+}
+
+#wrapper > footer {
+    grid-area: foot;
+}
+
+
+header, footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: green;
-    width: 90%;
-    max-width: 1200px;
-    min-height: 100%; 
-    grid-template-rows: 4rem auto 3rem;
-    grid-template-columns: 1fr 2fr 200px;
+}
+
+.menuitem{
+    background-color: white;
+    margin: 0;
+    border-top: 1px solid #b5e7a0;
+}
+
+.submenu{
+    list-style-type: none; /*no bullets*/ /*https://www.w3schools.com/css/css_list.asp*/
+    margin: 0;
+    padding: 0;
+}
+
+.submenu li{
+    padding-left: .25rem;
+    background-color: lightgrey;
+}
+
+@media screen and (max-width: 600px){
+#wrapper {
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "head" 
+    "nav" 
+    "art" 
+    "aside" 
+    "foot";
+    }
 }
 
