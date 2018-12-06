@@ -34,10 +34,9 @@ aside {
 /**************
 Your Formatting
 ***************/
+
+/*sets up grid */
 #mygrid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     display: grid;
     width: 90vw;
     max-width: 1000px;
@@ -49,24 +48,61 @@ Your Formatting
     "foot foot"; 
     grid-template-rows: 75px 30px auto 50px;
     grid-template-columns: auto auto;
+    justify-content: center;
 }
 
+/*alignment for header/footer/navigation */
+header, footer, nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* sets the menu items */
+.top {
+    display: flex;
+    align-items: space-evenly;
+    width: 6rem;
+    background-color: #ccc;
+}
+
+.list{
+    position: absolute;
+    list-style-type: none; /*no bullets*/
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+}
+
+.list li{
+    position: relative;
+    padding-left: .25rem;
+    background-color: #ddd;
+}
+
+/* sets up grid via template area */
 #mygrid > header {
+    background-color: lightpink;
     grid-area: head;
 }
 #mygrid > article {
+    background-color: lightcyan;
     grid-area: art;
 }
 #mygrid > nav {
+    background-color: lavenderblush;
     grid-area: nav;
 }
 #mygrid > aside {
+    background-color: lightblue;
     grid-area: aside;
 }
 #mygrid > footer {
+    background-color: lightpink;
     grid-area: foot;
 }
 
+/* sets up mobile grid on lowering screen width */
 @media screen and (max-width: 600px){
   #mygrid {
         width: 100vw;
