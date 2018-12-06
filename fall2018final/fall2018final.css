@@ -34,3 +34,49 @@ aside {
 /**************
 Your Formatting
 ***************/
+#mygrid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    width: 90vw;
+    max-width: 1000px;
+    min-height: 100vh;
+    grid-template-areas: 
+    "head head"
+    "art nav"
+    "art aside"
+    "foot foot"; 
+    grid-template-rows: 75px 30px auto 50px;
+    grid-template-columns: auto auto;
+}
+
+#mygrid > header {
+    grid-area: head;
+}
+#mygrid > article {
+    grid-area: art;
+}
+#mygrid > nav {
+    grid-area: nav;
+}
+#mygrid > aside {
+    grid-area: aside;
+}
+#mygrid > footer {
+    grid-area: foot;
+}
+
+@media screen and (max-width: 600px){
+  #mygrid {
+        width: 100vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: 75px 30px auto auto 30px;
+        grid-template-areas: 
+        "head" 
+        "nav" 
+        "art" 
+        "aside" 
+        "foot";
+        }
+}

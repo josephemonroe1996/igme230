@@ -1,0 +1,1 @@
+$(".list").hide(); /*hides submenu items on page load */
