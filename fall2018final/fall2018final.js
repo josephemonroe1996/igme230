@@ -4,6 +4,7 @@ $(".top").click(function(){ /* slide menu on click */
 });
 
 $("article").load("article0.txt"); /*loads content on page start */
-$("radio").change(function(){ /*loads content on change */
+$("input[name='story']").change(function(){ /*loads content on change */
     $("article").load($(this).val());
 });
+
