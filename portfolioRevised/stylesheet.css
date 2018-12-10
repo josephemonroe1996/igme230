@@ -144,7 +144,7 @@ article {
 }
 
 article h2{
-    margin: 0px 0px 40px 0px;
+    margin: 20px 0px 20px 0px;
 }
 
 article p{
@@ -234,11 +234,13 @@ img {
     }
 
     aside h2{
+        width: 70%;
         position: relative;
         top: 0%;
         left: 0%
     }
     aside p {
+        width: 85%;
         padding: 0px 30px 0px 0px;
         position: relative;
         top: 0%;
