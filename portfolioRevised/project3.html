@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="interactive.js"></script>
+    <title>Joseph Monroe's Portfolio</title>
+</head>
+<body>
+    <!--redone using grid-->
+    <div id="myGrid">
+      <header>
+        <h1>Joseph Monroe's Projects</h1>
+      </header>
+  
+      <nav>
+        <h3>Navigation</h3>
+        <!--drop down button modeled after w3 schools example-->
+        <div class="dropdown">
+                <button onclick="buttonClick()" class="dropbtn">Click me!</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="index.html">Home</a>
+                  <a href="projects.html">Back to Projects!</a>
+                  <a href="resume.html">Resume</a>
+                </div>
+              </div> 
+      </nav>
+  
+      <article>
+      <h2>New Media Design Project!</h2>
+        <div class="Project3">
+          <img src="NMDEphotoshop.jpg" alt="NMDE photo 1" class="center">
+          <img src="NMDEphotoshop2.jpg" alt="NMDE photo 2" class="center">
+          <p>These two photos were a project for a design class called NMDE. Our task was to design a tattoo from the ground up, then photoshop it onto skin to make it look real. I started by deciding what kind of tattoo I wanted to design. I ended up settling on a tribal style wolf with a third eye design mixed in. After planning out the design in illustrator I made a few different versions of it, but settled on the one that is in the photos above. That design just felt right to me. Applying the tattoo to the skin was actually a simple process. Going through photoshop we had to edit the curvature of the tattoo to match the skin and change the opacity to blend the tattoo with the skin. I really enjoyed this project and it was my favorite one of the semester.</p>
+        </div>
+      </article>
+
+      <aside>
+        <h2>Contact info</h2>
+        <p> <b>Name:</b> Joseph Monroe <br>
+          <b>Occupation:</b> Student <br>
+          <b>Email:</b> josephemonroe1996@gmail.com <br>
+          <br>
+            Email me for more information or if you would like to set something up!
+        </p>
+      </aside>
+    </div>
+    <script>
+        /* w3 schools drop down button menu example, used for portfolio website */ 
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function buttonClick() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+            
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+ </script>
+  
+</body>
+  
+  </html>

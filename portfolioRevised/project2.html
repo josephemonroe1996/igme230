@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="interactive.js"></script>
+    <title>Joseph Monroe's Portfolio</title>
+</head>
+<body>
+    <!--redone using grid-->
+    <div id="myGrid">
+      <header>
+        <h1>Joseph Monroe's Projects</h1>
+      </header>
+  
+      <nav>
+        <h3>Navigation</h3>
+        <!--drop down button modeled after w3 schools example-->
+        <div class="dropdown">
+                <button onclick="buttonClick()" class="dropbtn">Click me!</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="index.html">Home</a>
+                  <a href="projects.html">Back to Projects!</a>
+                  <a href="resume.html">Resume</a>
+                </div>
+              </div> 
+      </nav>
+  
+      <article>
+      <h2>Interactive Games and Media Project!</h2>
+      <div class="Project2">
+        <img src="IGMEpong.png" alt="IGME Pong" class="center">
+        <p>This is a recreation of the classic Pong! This was coded from the ground up through p5JS. I started with a blank screen then progressively coded each individual screen. This game was actually pretty simple to make. There was a switch statement that activated when the mouse was clicked over either the "play", "help", or "quit" buttons. This activated the switch statement and changed what was displayed on the screen, allowing for a seemless transition. The hardest part of the project was getting the ball to interact correctly with the "pong sticks" or player objects. There was four sides of the player object that had to be individually coded to react to the ball in a different way. This took quite a while, but a friend ended up helping me finish that part! This project turned out pretty well and I enjoyed doing it.</p>
+        </div>
+      </article>
+
+      
+  
+      <aside>
+        <h2>Contact info</h2>
+        <p> <b>Name:</b> Joseph Monroe <br>
+          <b>Occupation:</b> Student <br>
+          <b>Email:</b> josephemonroe1996@gmail.com <br>
+          <br>
+            Email me for more information or if you would like to set something up!
+        </p>
+      </aside>
+  </div>
+    <script>
+        /* w3 schools drop down button menu example, used for portfolio website */ 
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function buttonClick() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+            
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+ </script>
+  
+</body>
+  
+  </html>

@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: myWebFont;
+    src: url("Sofia-Regular.otf") format('otf');
+    font-weight: normal;
+}
+
+/* w3 schools drop down button tutorial */
+ /* Dropdown Button */
+ .dropbtn {
+    background-color: #262626;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #1d1d1d;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #262626;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (uses JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;} 
+
+/* end button code from W3 schools drop down tutorial */
+
+
+/* defines grid */
+#myGrid{
+        display: grid;
+        width: 95vw;
+        height: 95vh;
+        grid-template-areas: 
+        "head head head"
+        "nav art aside";
+        grid-template-rows: 60px auto;
+        grid-template-columns: 300px 1fr 300px;
+        justify-content: center;
+}
+/* grid areas */
+#myGrid > header {
+    grid-area: head;
+}
+#myGrid > article {
+    grid-area: art;
+}
+#myGrid > nav {
+    grid-area: nav;
+}
+#myGrid > aside {
+    grid-area: aside;
+}
+
+/* area adjustment of grid cells */
+nav, aside {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* adjustment for each element */
+
+body {
+    background-color: black;
+}
+
+header {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    margin: 10px 10px 10px 10px;
+}
+
+nav {
+    padding: 0px 30px 30px 30px;
+    position: fixed;
+    top: 40%;
+    left: 5%;
+    background-color: purple;
+    display: flex;
+    align-items: center;
+}
+
+aside {
+    width: 100%;
+    background-color: green;
+    padding: 0px 30px 0px 30px;
+}
+
+aside h2{
+    position: fixed;
+    top: 30%;
+    left: 78%;
+}
+aside p {
+    padding: 0px 40px 0px 0px;
+    position: fixed;
+    top: 40%;
+    left: 75%;
+}
+
+article {
+    width: 100%;
+    background-color: blue;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 30px 0px 30px;
+}
+
+article h2{
+    margin: 0px 0px 40px 0px;
+}
+
+article p{
+    padding: 5px 10px 5px 10px;
+}
+
+img[alt="Photo of me!"]{
+    left: 0%;
+    height: 150px;
+    width: 250px;
+}
+
+img {
+    padding: 0px 15px 0px 15px;
+    display: flex;
+    align-self: center;
+    width: 400px;
+    margin: 0px 20px 20px 20px;
+    position: relative;
+    left: 15%;
+}
+
+
+
+@media screen and (max-width: 680px) {
+    body {
+        width: 95vw;
+        display: grid;
+        justify-content: center;
+        margin: 10px 10px 10px 10px;
+        padding: auto;
+
+    }
+
+    #myGrid{
+            width: 100vw;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto auto;
+            grid-template-areas: 
+            "head" 
+            "nav" 
+            "art" 
+            "aside";
+    }
+
+    img {
+        width: 80%;
+        position: relative;
+        left: 9%;
+    }
+
+    header{
+        width: 100vw;
+        margin: 10px 0px 10px 0px;
+    }
+
+    nav {
+        width: 100vw;
+        display: grid;
+        justify-content: center;
+        position: relative;
+        top: 0%;
+        left: 0%;
+        margin: 10px 0px 10px 0px;
+    }
+
+    article {
+        width: 100vw;
+        display: grid;
+        justify-content: center;
+        word-wrap: normal;
+        overflow-wrap: normal;
+        margin: 10px 0px 10px 0px;
+    }
+
+    aside {
+        width: 100vw;
+        display: grid;
+        justify-content: center;
+        word-wrap: normal;
+        overflow-wrap: normal;
+        margin: 10px 0px 10px 0px;
+        padding-left: 70px;
+    }
+
+    aside h2{
+        position: relative;
+        top: 0%;
+        left: 0%
+    }
+    aside p {
+        padding: 0px 30px 0px 0px;
+        position: relative;
+        top: 0%;
+        left: 0%;
+    }
+}
+
